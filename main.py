@@ -11,7 +11,7 @@ st.image(anh, caption = 'Các tàu dầu ở vùng biển gần eo biển Hormuz
 if st.button('Doc noi dung'):
   tts = gTTS(text = tin1 + tin2, lang = 'vi')
   output_file = 'output.mp3'
-  tts.save(ouput_file)
+  tts.save(output_file)
   audio_file = open(output_file, 'rb')
   audio_byte = audio_file.read()
   st.audio(audio_byte, format = 'audio/mp3')
